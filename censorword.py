@@ -2,6 +2,8 @@ import connectcsvabusive
 import pandas as pd
 import re
 
+connectcsvabusive.df['ABUSIVE']
+
 abusiveword = [df['ABUSIVE']]
 print(abusiveword)
 
@@ -10,6 +12,3 @@ def censor(replaceword):
         replaceword = re.sub(abusiveword, '*', * len(word), flags=re.IGNORECASE)
         print(f"Forbidden word REMOVED: {word}")
     return replaceword
-
-df = censor(D:/Binar/Challenge/Binar Challenge 1/Asset Challenge/data.csv)
-print(df)
