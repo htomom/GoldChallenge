@@ -12,10 +12,11 @@ def censor(text):
         length = len(word)
         replacement = '*' * length
         text = pattern.sub(replacement, text.lower())
+    
     return text
 
 
-def changealay(text):
+def changealay(txt):
     alay = dict(zip(df_kbbi['TIDAKBAKU'], df_kbbi['BAKU']))
-    text = ' '.join([alay[word] if word in alay else word for word in text.split(' ')])
-    return text
+    txt = ' '.join([alay[word] if word in alay else word for word in txt.split(' ')])
+return txt
