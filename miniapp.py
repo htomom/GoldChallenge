@@ -29,7 +29,7 @@ def removechars(text):
     return text
 
 def removenothers(text):
-    text = re.sub('[^0-9a-zA-Z~*#]+', ' ', text) 
+    text = re.sub('[^0-9a-zA-Z~*#?!]+', ' ', text) 
     return text
 
 # fungsi cleaning censor kata kasar dan ubah kalimat alay
